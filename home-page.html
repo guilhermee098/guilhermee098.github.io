@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="ca-title">
+      <h2 data-aos="fade">
+        Central de
+        <div class="mask">
+          <span data-show>conectividade.</span>
+          <span>comunicação.</span>
+          <span>atendimento.</span>
+          <span>Apoio.</span>
+        </div>
+      </h2>
+    </div>
+
+    <div class="content" data-aos="fade-left">
+      A Central de Apoio é uma célula da GAI que, devido as necessidades
+      avaliadas durante a pandemia, foi criada em meados de 2020. Tinha como
+      objetivo, inicialmente, apoiar o projeto Conexäo das Unidades de Saüde da
+      Familia (USF).
+    </div>
+    <div class="numeros" data-aos="fade">
+      <img
+        src="https://ik.imagekit.io/guilhermee098/chamados-atendidos1.png?updatedAt=1678777865009"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div class="ilustracao" data-aos="fade">
+      <img
+        src="https://ik.imagekit.io/guilhermee098/ilustracao.png?updatedAt=1678777855904"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div class="content-group content content02" data-aos="fade-left">
+      <span>Projetos</span>
+      <div class="text-description" data-aos="fade-left">
+        Entre 2020 e até o presente momento, atuou em diversos projetos, como:
+        Alunos Conectados, Diploma Digital, Conectividade de Clientes, Ebserh,
+        Escolas Conectadas, entre outros. Foi idealizada pelo diretor de
+        Engenharia e Operações, Eduardo Grizendi, que entendeu a importância de
+        uma estratégia de foco nos clientes e fornecedores.
+      </div>
+    </div>
+    <div class="content-group content content03" data-aos="fade-left">
+      <span>Missão</span>
+      <div class="text-description" data-aos="fade-left">
+        Atuar como facilitadora e intermediadora no relacionamento com o público
+        alvo dos projetos e fornecedores de serviços, tendo como foco a
+        integraçäo da comunidade beneficiada com a tecnologia e através dela
+        alcançar a igualdade tecnológica.
+      </div>
+    </div>
+    <div class="content-group content content04" data-aos="fade-left">
+      <span>Visão</span>
+      <div class="text-description" data-aos="fade-left">
+        Ser reconhecida pela RNP como uma célula que, busca atuar ativamente na
+        entrega de serviços relacionados a TIC, contribuindo na inclusäo social
+        e tecnológica.
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+  :root {
+    --offset: 6px;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Barlow;
+    background-image: url("https://ik.imagekit.io/guilhermee098/conexoes.png?updatedAt=1678777861962");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .ca-title {
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    margin: 0;
+  }
+
+  h2 {
+    width: 650px;
+    font-size: 65px;
+    font-family: Barlow;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #1d1d1f;
+  }
+
+  .mask {
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--offset);
+  }
+
+  .mask span {
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    top: 65px;
+    padding-bottom: var(--offset);
+
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+  }
+
+  .mask span[data-show] {
+    transform: translateY(-100%);
+    transition: 0.5s transform ease-in-out;
+  }
+
+  .mask span[data-up] {
+    transform: translateY(-200%);
+    transition: 0.5s transform ease-in-out;
+  }
+
+  .mask span:nth-child(1) {
+    background-image: linear-gradient(45deg, #e67651 50%, #bd2f00);
+  }
+
+  .mask span:nth-child(2) {
+    background-image: linear-gradient(45deg, #18e162 50%, #00ab03);
+  }
+
+  .mask span:nth-child(3) {
+    background-image: linear-gradient(45deg, #4d62ff 50%, #0015b6);
+  }
+
+  .mask span:nth-child(4) {
+    background-image: linear-gradient(45deg, #6b5be1 50%, #391f60);
+  }
+
+  .content-group span {
+    font-size: x-large;
+    color: #430069;
+  }
+
+  .content {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    font-weight: bold;
+    color: #525151;
+    width: 30%;
+    text-align: justify;
+  }
+
+  .numeros {
+    position: relative;
+    width: 750px; /* largura desejada */
+    height: 750px; /* altura desejada */
+    margin: 0 auto; /* centraliza horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .numeros img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ilustracao img {
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    max-width: 350px;
+    height: auto;
+  }
+  .content02 {
+    position: absolute;
+    top: 75%;
+    right: 7%;
+    font-weight: bold;
+    color: #525151;
+    width: 35%;
+    text-align: justify;
+  }
+  .content03 {
+    position: absolute;
+    top: 110%;
+    right: 7%;
+    font-weight: bold;
+    color: #525151;
+    width: 35%;
+    text-align: justify;
+  }
+  .content04 {
+    position: absolute;
+    top: 110%;
+    left: 7%;
+    font-weight: bold;
+    color: #525151;
+    width: 35%;
+    text-align: justify;
+    padding-bottom: 75px;
+  }
+
+  .text-description {
+    margin-top: 15px;
+  }
+</style>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+  });
+</script>
+<script>
+  setInterval(function () {
+    const show = document.querySelector("span[data-show]");
+    const next =
+      show.nextElementSibling || document.querySelector("span:first-child");
+    const up = document.querySelector("span[data-up]");
+
+    if (up) {
+      up.removeAttribute("data-up");
+    }
+
+    show.removeAttribute("data-show");
+    show.setAttribute("data-up", "");
+
+    next.setAttribute("data-show", "");
+  }, 2500);
+</script>
